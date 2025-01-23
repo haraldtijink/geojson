@@ -95,4 +95,9 @@ class Feature extends GeoJson
 
         return $json;
     }
+
+    public function setProperties(array $properties)
+    {
+        $this->properties = $properties;
+    }
 }
