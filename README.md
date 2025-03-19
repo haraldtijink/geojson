@@ -1,3 +1,5 @@
+Custom changes to be able to SET values, not only READONLY
+
 # GeoJson PHP Library
 
 [![Build Status](https://github.com/jmikola/geojson/actions/workflows/tests.yml/badge.svg)](https://github.com/jmikola/geojson/actions)

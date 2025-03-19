@@ -19,7 +19,7 @@ use function json_decode;
 
 class FeatureCollectionTest extends BaseGeoJsonTest
 {
-    public function createSubjectWithExtraArguments(...$extraArgs)
+    public function createSubjectWithExtraArguments(...$extraArgs): FeatureCollection
     {
         return new FeatureCollection([], ... $extraArgs);
     }
@@ -145,7 +145,7 @@ JSON;
         $this->assertSame([1, 1], $geometry->getCoordinates());
     }
 
-    public function provideJsonDecodeAssocOptions()
+    public function provideJsonDecodeAssocOptions(): array
     {
         return [
             'assoc=true' => [true],
